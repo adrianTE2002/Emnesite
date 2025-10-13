@@ -9,32 +9,49 @@
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
     <link rel="stylesheet" href="css/generel.css" />
     <link rel="stylesheet" href="css/layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <a href="index.html"><img src="images/Logo.svg" /></a>
-      <nav>
-        <ul>
-          <li><a href="opskrifter.html">Opskrifter</a></li>
-          <li><a href="om_os.html">Om os</a></li>
-          <li><a href="">Newsletter</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="logo">
+        <h1>Nørre bryggeren</h1>
+      </div>
+      <span class="header_list">
+        <nav>
+          <ul class="menu">
+            <li><a href="opskrifter.html">Opskrifter</a></li>
+            <li><a href="om_os.html">Om os</a></li>
+            <li><button class="newsletter_btn">Nyhedsbrev</button></li>
+          </ul>
+          <div class="burger" id="menu-toggle">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </nav>
+      </span>
     </header>
 
     <main>
-      <h1>Nørre bryggeren</h1>
-      <img src="images/ChatGPT Image 8. okt. 2025, 11.30.23_result.webp" alt="kaffe bønner" />
-      <p>Der findes alverdens måder at brygge kaffe. Det kan være svært at finde rundt, både som nybegynder og som erfarende. Så følg med på bloggen hvor vi snakker om forskellen i de forskellige bryggemetoder.</p>
-      <a href="opskrifter.html">Se opskrifter</a>
+      <section class="forside_section">
+        <h1>Nørre bryggeren</h1>
+        <img src="images/ChatGPT Image 8. okt. 2025, 11.30.23_result.webp" alt="kaffe bønner" />
+        <p>Der findes alverdens måder at brygge kaffe. Det kan være svært at finde rundt, både som nybegynder og som erfarende. Så følg med på bloggen hvor vi snakker om forskellen i de forskellige bryggemetoder.</p>
+        <button><a href="opskrifter.html">Se opskrifter</a></button>
+      </section>
     </main>
 
     <footer>
       <h1>Nørre bryggeren</h1>
-      <a href="https://www.facebook.com/"><img src="images/Facebook_mobilsite.svg" alt="facebook" /></a>
-      <a href="https://www.instagram.com/"><img src="images/Instagram_mobilsite.svg" alt="instagram" /></a>
-      <a href="https://www.twitter.com/"><img src="images/Twitter_mobilsite.svg" alt="twitter" /></a>
+      <div class="footer_sociale_medier">
+        <a href="https://www.facebook.com/"><img src="images/Facebook_mobilsite.svg" alt="facebook" /></a>
+        <a href="https://www.instagram.com/"><img src="images/Instagram_mobilsite.svg" alt="instagram" /></a>
+        <a href="https://www.twitter.com/"><img src="images/Twitter_mobilsite.svg" alt="twitter" /></a>
+      </div>
       <p>&copy; 2025 Adrian Egeberg</p>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>
